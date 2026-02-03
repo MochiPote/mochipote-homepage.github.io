@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* 全体のスタイル設定 */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0d1117; /* GitHubダークモード風の背景色 */
+            color: #c9d1d9;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* 右上のプロフィール写真 */
+        .profile-img {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 2px solid #30363d;
+            object-fit: cover;
+        }
+
+        /* 中央のリンクボタン */
+        .links-container {
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-note {
+            background-color: #2cb696; /* noteのブランドカラー風 */
+            color: white;
+        }
+
+        .btn-x {
+            background-color: #ffffff; /* X(Twitter)の白ボタン */
+            color: #000000;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+            transform: translateY(-2px);
+        }
+
+        /* 右下のクレジット */
+        .footer-text {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 12px;
+            color: #8b949e;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="profile.png" alt="Profile" class="profile-img">
+
+    <div class="links-container">
+        <h1>もちぽてのホームページへようこそ</h1>
+        <a href="https://note.com/potato_hokuhpku" target="_blank" class="btn btn-note">note</a>
+        <a href="https://x.com/mochipote_X" target="_blank" class="btn btn-x">X (Twitter)</a>
+    </div>
+
+    <div class="footer-text">GitHubにて作成</div>
+
+</body>
+</html>
