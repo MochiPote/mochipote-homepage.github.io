@@ -17,6 +17,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            overflow: hidden;
         }
 
         /* 右上のプロフィール写真 */
@@ -31,34 +32,55 @@
             object-fit: cover;
         }
 
-        /* 中央のリンクボタン */
+        /* コンテナ */
         .links-container {
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+
+        /* ボタンの共通スタイル */
+        .btn {
+            display: block;
+            margin: 15px auto;
+            padding: 12px 0;
+            width: 80%;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
             text-align: center;
         }
 
-        .btn {
-            display: inline-block;
-            margin: 10px;
-            padding: 12px 24px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
+        /* note: 緑 */
         .btn-note {
-            background-color: #2cb696; /* noteのブランドカラー風 */
+            background-color: #2cb696;
             color: white;
         }
 
+        /* X (Twitter): 白 */
         .btn-x {
-            background-color: #ffffff; /* X(Twitter)の白ボタン */
+            background-color: #ffffff;
             color: #000000;
+        }
+
+        /* TikTok: 黒地にマゼンタ/シアンのアクセントをイメージした影 */
+        .btn-tiktok {
+            background-color: #000000;
+            color: #ffffff;
+            border: 1px solid #333;
+            box-shadow: 2px 2px 0px #ff0050, -2px -2px 0px #00f2ea;
         }
 
         .btn:hover {
             opacity: 0.8;
-            transform: translateY(-2px);
+            transform: scale(1.05);
         }
 
         /* 右下のクレジット */
@@ -76,9 +98,10 @@
     <img src="profile.png" alt="Profile" class="profile-img">
 
     <div class="links-container">
-        <h1>もちぽてのホームページへようこそ</h1>
+        <h1>My Links</h1>
         <a href="https://note.com/potato_hokuhpku" target="_blank" class="btn btn-note">note</a>
         <a href="https://x.com/mochipote_X" target="_blank" class="btn btn-x">X (Twitter)</a>
+        <a href="https://www.tiktok.com/@mochipote_tik?_r=1&_t=ZS-949iYXC3ORF" target="_blank" class="btn btn-tiktok">TikTok</a>
     </div>
 
     <div class="footer-text">GitHubにて作成</div>
